@@ -1,2 +1,7 @@
-package pageobject;public class HomePage {
+package pageobject;
+
+import base.BasePage;
+
+public class HomePage extends BasePage {
+
 }

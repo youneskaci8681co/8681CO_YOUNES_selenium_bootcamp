@@ -1,5 +1,4 @@
-package test_searchbar_functionality;
-
+package test_app;
 import base.BasePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;

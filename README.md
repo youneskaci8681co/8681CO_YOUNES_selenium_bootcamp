@@ -105,7 +105,7 @@ consistently (run test 2-3x to confirm)
 `**DO NOT MESS WITH ANY POM.XML FILE, UNLESS YOU TRULY UNDERSTAND WHAT YOU ARE DOING**`
 - To utilize JDBC, create a schema instance for each module in MySQL Workbench. Then, navigate to `src/main/resources/config.properties`
 for each corresponding module, and ensure your `MYSQLJDBC.host` property value contains the correct schema. Don't forget to initialize MySQL prior to running tests!
-- When running tests from a Test Class, you need to make sure the method in the BasePage class, 
+- When running tests from a Test Class, you need to make sure the method in the Page_Object class, 
 named `driverSetup (@BeforeMethod)`, has an optional parameter `URL`, with the value of the website you are testing. 
     - If running tests from the xml file, then the `URL` parameter should point to the application homepage
 - If you would like your test to automatically retry upon failure, annotate the test method with `@RetryCount(n)` 

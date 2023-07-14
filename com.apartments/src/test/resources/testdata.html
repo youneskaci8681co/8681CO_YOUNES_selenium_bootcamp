@@ -1,10 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+Test1: Validate searchBar
+Navigate to the url https://www.apartments.com/
+click on search bar
+type in location
+click on search button
+searchBarLookup page displays
+
+
+Test2:Validate searchBarResults
+Navigate to url https://www.apartments.com/
+click on search bar
+type in incomplete location
+select the desired result suggestion
+searchBarLookup page displays
+
+Test3:Validate sign in with valid credentials (valid email-add/password)
+Navigate to url https://www.apartments.com/
+click on sign in button
+type valid email-address
+type valid password
+click on sign in button
+name displayed
+
+Test4:Validate sign in with invalid credentials (invalid email-add/password)
+Navigate to url https://www.apartments.com/
+click on sign in button
+type invalid email-address
+type invalid password
+click on sign in button
+Invalid username/password combination error displayed
+
+Test5:Validate sign in with credentials (invalid email-add/valid password)
+Navigate to url https://www.apartments.com/
+click on sign in button
+type invalid email-address
+type valid password
+click on sign in button
+name displayed
+
+Test6:Validate sign in with credentials (valid email-add/invalid password)
+Navigate to url https://www.apartments.com/
+click on sign in button
+type valid email-address
+type invalid password
+click on sign in button
+name displayed
+
+
+Test7:Validate navigation to MyAccount
+Navigate to url https://www.apartments.com/
+click on menu button
+click on  Account option
+click on My Account option
+My Account page displayed
+
+Test8:Validate navigation to MyAccount
+Navigate to url https://www.apartments.com/
+Hover over name dropdown
+click on My Account option
+My Account page displayed
+
+Test9:Validate AddAProperty functionality
+Navigate to url https://www.apartments.com/
+Click on AddAProperty button
+click on Single unit
+click on address textBox
+type in "1111 3"
+Click on "1111 3rd Avenue, New York, NY" option
+click on property type dropdown
+click on 'Single Family House' option
+click on Beds dropdown
+click "2.0" option
+click on Baths dropdown
+click on "1.5" option
+click on "I'm not a robot" check box
+click on addMyProperty button
+Property added
