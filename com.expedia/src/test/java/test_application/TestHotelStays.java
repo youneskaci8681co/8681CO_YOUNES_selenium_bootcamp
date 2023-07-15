@@ -9,8 +9,8 @@ public class TestHotelStays extends BasePage {
     @Test
     public void testSelectingDestination() {
         SelectStays selectStays = new SelectStays();
-        selectStays.selectDestination("Paris", 3);
-        String expText = "Paris City Center";
+        selectStays.selectDestination("orlando", 3);
+        String expText = " City Center";
         String desActText = selectStays.goingToButton.getAttribute("aria-label");
         Assert.assertTrue(desActText.contains(expText));
     }
@@ -18,15 +18,15 @@ public class TestHotelStays extends BasePage {
     @Test
     public void testSelectingCheckInDate() {
         SelectStays selectStays = new SelectStays();
-        selectStays.selectCheckInDate("December", "2022", 22);
+        selectStays.selectCheckInDate("December", "2023", 22);
         String actText = selectStays.checkInButton.getAttribute("aria-label");
-        Assert.assertTrue(actText.contains("Check-in December 22, 2022"));
+        Assert.assertTrue(actText.contains("Check-in December 24, 2023"));
     }
 
     @Test
     public void testSelectingCheckOutDate() {
         SelectStays selectStays = new SelectStays();
-        selectStays.selectCheckOutDate("January", "2023", 2);
+        selectStays.selectCheckOutDate("January", "2024", 2);
         String actText = selectStays.checkOutButton.getAttribute("aria-label");
         Assert.assertTrue(actText.contains("Check-out January 2, 2023"));
 

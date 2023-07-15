@@ -50,9 +50,9 @@ public class TestTravel extends BasePage {
     public void testSelectDestination(){
         HomePage homePage = new HomePage();
         SelectFlight selectFlight = homePage.clickFlightPage();
-        selectFlight.clickAndSendKeysGoingToButton("par",2);
+        selectFlight.clickAndSendKeysGoingToButton("flo",2);
         String actText = selectFlight.goingToButton.getAttribute("aria-label");
-        Assert.assertTrue(actText.contains("Paris (ORY - Orly)"));
+        Assert.assertTrue(actText.contains("orlando"));
     }
 
     @Test

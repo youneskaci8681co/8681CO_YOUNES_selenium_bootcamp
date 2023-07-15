@@ -123,7 +123,7 @@ public class SelectStays extends BasePage {
                 if (text.equals(checkIngMonth)) {
                     break;
                 } else {
-                    if (checkIngMonth.equals("November 2022")) {
+                    if (checkIngMonth.equals("November 2023")) {
                         clickOnElement(datePickerLeftArrow);
                     } else {
                         clickOnElement(datePickerRightArrow);
